@@ -57,10 +57,90 @@
         }
 
         .season-card {
-            width: 20%;
+
             height: 250px;
         }
+
+        @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .counter-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin: 30px 50px;
+        }
+
+        .counter {
+            font-size: 60px;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 580px) {
+            body {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .img-land {
+                width: 50%;
+            }
+        }
+
+        .gradient {
+
+            background: linear-gradient(-3deg, #28a745 47%, #FFBF34 50%);
+            color: #ffff;
+
+        }
+
+
+        .mango-specialists {
+            font-size: 24px;
+        }
+
+        .img-fluid {
+            top: 0;
+            right: 0;
+            height: 550px !important;
+            opacity: 0.7;
+            z-index: 1;
+        }
+
+
+        .col-md-6.row.justify-content-end.align-self-end.text-center.position-absolute {
+            top: 0;
+            right: 0;
+            z-index: 1;
+
+        }
+
+        .row {
+            z-index: 100;
+        }
+
+        ul.fa-ul.mango-specialists.text-left.mt-5 {
+            
+        }
+
+        .text-center.mt-5.land.position-relative {
+            z-index: 100;
+            
+        }
+        .rotate-icon {
+            transform: rotate(180deg);
+            transition: transform 0.3s ease;
+            /* Add a smooth transition effect */
+        }
     </style>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css'>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -149,170 +229,148 @@
 
 
 
-    <section class="">
-        <div class="productrow mt-3 d-block" style="display: none;">
-            <div class="row justify-content-center  text-center">
-                <div class="col-11">
-                    <h4 class="text-center">Featured Mango Product</h4>
-                    <hr class="col-1  font-weight-bold bg-warning text-center mb-2 pb-1">
-                </div>
-                <div class="col-1">
-                    <h4><a href="#" class="pull-right badge badge-warning"
-                            onclick="if (!window.__cfRLUnblockHandlers) return false; loadCategoryPage(954);return false;">See
-                            All</a></h4>
-                </div>
 
-            </div>
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col-11">
-                        <h4>Featured Mango Product</h4>
-                        <hr class="col-1 font-weight-bold bg-warning text-center mb-2 pb-1 mx-auto">
-                    </div>
-                </div>
+    <section class="container mt-5 mb-5">
+        <h4 class="text-center text-uppercase mt-4">Featured Mango Product </h4>
+        <hr class="col-1 font-weight-bold bg-warning my-2 pb-1">
 
-            </div>
-            <div class="row">
-                <div class="col-12 horscroll horscrollcateg" id="parent-catalog-12">
-                    <div class="row product-list" id="product-row-maha" style="width: 3200px;">
-                        <div class="product-container">
-                            <div class="product-item bg-white" data-id="9">
-                                <div class="product-card text-center">
-                                    <div class="saleribbon red fade"><span>% OFF</span></div> <span id="new-block"
-                                        class="badge-new fade"> NEW </span> <a
-                                        onclick="javascript:loadProductDetailPage(9,1);return false;"
-                                        href="?/PD/RedDeliciousApples5Count/9"><img src="np/image/organic_seal.png"
-                                            class="organicseal d-none"><img
-                                            src="https://www.shoperies.com/media/catalog/product/a/p/apple_1.jpg"
-                                            data-src="https://www.shoperies.com/media/catalog/product/a/p/apple_1.jpg"
-                                            class="" alt="Red Delicious Apples - 5 Count"
-                                            title="Red Delicious Apples - 5 Count"></a>
-                                    <div class="info-wrap text-center"
-                                        onclick="loadProductDetailPage(9,1);return false;">Red Delicious Apples</div>
-                                    <div class="row">
-                                        <div class="no-padding col price-card my-2"
-                                            onclick="loadProductDetailPage(9,1)">
-                                            <p class="font-weight-bold text-success mt-1 mb-0">
-                                                <span
-                                                    class="font-weight-normal center-block text-black-50 fade"><del></del></span>
-                                                $2.99
-                                            </p>
-                                            <p class="text-muted my-0 {{size-visibility}}">(5 Count)</p>
-                                        </div>
+
+        <div class="container row justify-content-around mt-3 mb-3">
+            <div class="col-12 horscroll horscrollcateg" id="parent-catalog-12">
+                <div class="row product-list" id="product-row-maha" style="width: 3200px;">
+                    <div class="product-container">
+                        <div class="product-item bg-white" data-id="9">
+                            <div class="product-card text-center">
+                                <div class="saleribbon red fade"><span>% OFF</span></div> <span id="new-block"
+                                    class="badge-new fade"> NEW </span> <a
+                                    onclick="javascript:loadProductDetailPage(9,1);return false;"
+                                    href="?/PD/RedDeliciousApples5Count/9"><img src="np/image/organic_seal.png"
+                                        class="organicseal d-none"><img
+                                        src="https://www.shoperies.com/media/catalog/product/a/p/apple_1.jpg"
+                                        data-src="https://www.shoperies.com/media/catalog/product/a/p/apple_1.jpg"
+                                        class="" alt="Red Delicious Apples - 5 Count"
+                                        title="Red Delicious Apples - 5 Count"></a>
+                                <div class="info-wrap text-center" onclick="loadProductDetailPage(9,1);return false;">
+                                    Red Delicious Apples</div>
+                                <div class="row">
+                                    <div class="no-padding col price-card my-2" onclick="loadProductDetailPage(9,1)">
+                                        <p class="font-weight-bold text-success mt-1 mb-0">
+                                            <span
+                                                class="font-weight-normal center-block text-black-50 fade"><del></del></span>
+                                            $2.99
+                                        </p>
+                                        <p class="text-muted my-0 {{size-visibility}}">(5 Count)</p>
                                     </div>
-                                    <div class="row add-to-basket-div hide">
-                                        <button type="button" id="add-to-basket9"
-                                            class="btn btn-outline-success add-to-basket mb-1 mx-1" data-options=""
+                                </div>
+                                <div class="row add-to-basket-div hide">
+                                    <button type="button" id="add-to-basket9"
+                                        class="btn btn-outline-success add-to-basket mb-1 mx-1" data-options=""
+                                        data-productname="Red Delicious Apples - 5 Count" data-productid="9"
+                                        title="Basket orders for Scheduled automated deliveries"><i
+                                            class="fa fa-shopping-basket"></i><b> Add to basket</b></button>
+                                </div>
+                                <div class="row add-to-cart-div">
+                                    <button class="btn btn-default btn-oos center-block d-none" disabled=""> Out Of
+                                        Stock </button>
+                                    <button class="center-block add-to-cart " id="add-to-cart-9"
+                                        data-test-id="add-button">Add to Cart <i
+                                            class="fa fa-shopping-cart fa-lg"></i></button>
+                                    <div class="center-block quantity" id="quantityhomelist9">
+                                        <button class="minus-btn btn-quantity btn-success" type="button" data-options=""
+                                            data-productid="9" name="button">
+                                            -
+                                        </button>
+                                        <input type="text" class="item-quantity" data-options="" name="qtyoffer9"
                                             data-productname="Red Delicious Apples - 5 Count" data-productid="9"
-                                            title="Basket orders for Scheduled automated deliveries"><i
-                                                class="fa fa-shopping-basket"></i><b> Add to basket</b></button>
-                                    </div>
-                                    <div class="row add-to-cart-div">
-                                        <button class="btn btn-default btn-oos center-block d-none" disabled=""> Out Of
-                                            Stock </button>
-                                        <button class="center-block add-to-cart " id="add-to-cart-9"
-                                            data-test-id="add-button">Add to Cart <i
-                                                class="fa fa-shopping-cart fa-lg"></i></button>
-                                        <div class="center-block quantity" id="quantityhomelist9">
-                                            <button class="minus-btn btn-quantity btn-success" type="button"
-                                                data-options="" data-productid="9" name="button">
-                                                -
-                                            </button>
-                                            <input type="text" class="item-quantity" data-options="" name="qtyoffer9"
-                                                data-productname="Red Delicious Apples - 5 Count" data-productid="9"
-                                                data-storeid="1" value="1">
-                                            <button class="plus-btn btn-quantity btn-success" type="button"
-                                                name="button">
-                                                + <i class="fa fa-shopping-cart fa-lg"></i>
-                                            </button>&nbsp;
-                                        </div>
+                                            data-storeid="1" value="1">
+                                        <button class="plus-btn btn-quantity btn-success" type="button" name="button">
+                                            + <i class="fa fa-shopping-cart fa-lg"></i>
+                                        </button>&nbsp;
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
-                        <div class="product-container">
-                            <div class="product-item bg-white" data-id="21">
-                                <div class="product-card text-center">
-                                    <div class="saleribbon red fade"><span>% OFF</span></div> <span id="new-block"
-                                        class="badge-new fade"> NEW </span> <a
-                                        onclick="javascript:loadProductDetailPage(21,1);return false;"
-                                        href="?/PD/Banana2Lb/21"><img src="np/image/organic_seal.png"
-                                            class="organicseal d-none"><img
-                                            src="https://www.shoperies.com/media/catalog/product/r/i/ripe-banana_5.jpeg"
-                                            data-src="https://www.shoperies.com/media/catalog/product/r/i/ripe-banana_5.jpeg"
-                                            class="" alt="Banana - 2 Lb" title="Banana - 2 Lb"></a>
-                                    <div class="info-wrap text-center"
-                                        onclick="loadProductDetailPage(21,1);return false;">Banana</div>
-                                    <div class="row">
-                                        <div class="no-padding col price-card my-2"
-                                            onclick="loadProductDetailPage(21,1)">
-                                            <p class="font-weight-bold text-success mt-1 mb-0">
-                                                <span
-                                                    class="font-weight-normal center-block text-black-50 fade"><del></del></span>
-                                                $2.49
-                                            </p>
-                                            <p class="text-muted my-0 {{size-visibility}}">(2 Lb)</p>
-                                        </div>
-                                    </div>
-                                    <div class="row add-to-basket-div hide">
-                                        <button type="button" id="add-to-basket21"
-                                            class="btn btn-outline-success add-to-basket mb-1 mx-1" data-options=""
-                                            data-productname="Banana - 2 Lb" data-productid="21"
-                                            title="Basket orders for Scheduled automated deliveries"><i
-                                                class="fa fa-shopping-basket"></i><b> Add to basket</b></button>
-                                    </div>
-                                    <div class="row add-to-cart-div">
-                                        <button class="btn btn-default btn-oos center-block d-none" disabled=""> Out Of
-                                            Stock </button>
-                                        <button class="center-block add-to-cart " id="add-to-cart-21"
-                                            data-test-id="add-button">Add to Cart <i
-                                                class="fa fa-shopping-cart fa-lg"></i></button>
-                                        <div class="center-block quantity" id="quantityhomelist21">
-                                            <button class="minus-btn btn-quantity btn-success" type="button"
-                                                data-options="" data-productid="21" name="button">
-                                                -
-                                            </button>
-                                            <input type="text" class="item-quantity" data-options="" name="qtyoffer21"
-                                                data-productname="Banana - 2 Lb" data-productid="21" data-storeid="1"
-                                                value="1">
-                                            <button class="plus-btn btn-quantity btn-success" type="button"
-                                                name="button">
-                                                + <i class="fa fa-shopping-cart fa-lg"></i>
-                                            </button>&nbsp;
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                        <div class="product-container">
-                            <div class="product-item">
-                                <div class="product-card">
-                                    <br><br><br><br>
-                                    <div class="row">
-                                        <a class="center-block add-to-cart" data-test-id="add-button"
-                                            onclick="loadCategoryPage('954')">See All &gt;</a>
-                                    </div>
-                                    <br><br><br><br>
-                                </div>
-                            </div>
-                        </div>
-
-
                     </div>
+
+
+                    <div class="product-container">
+                        <div class="product-item bg-white" data-id="21">
+                            <div class="product-card text-center">
+                                <div class="saleribbon red fade"><span>% OFF</span></div> <span id="new-block"
+                                    class="badge-new fade"> NEW </span> <a
+                                    onclick="javascript:loadProductDetailPage(21,1);return false;"
+                                    href="?/PD/Banana2Lb/21"><img src="np/image/organic_seal.png"
+                                        class="organicseal d-none"><img
+                                        src="https://www.shoperies.com/media/catalog/product/r/i/ripe-banana_5.jpeg"
+                                        data-src="https://www.shoperies.com/media/catalog/product/r/i/ripe-banana_5.jpeg"
+                                        class="" alt="Banana - 2 Lb" title="Banana - 2 Lb"></a>
+                                <div class="info-wrap text-center" onclick="loadProductDetailPage(21,1);return false;">
+                                    Banana</div>
+                                <div class="row">
+                                    <div class="no-padding col price-card my-2" onclick="loadProductDetailPage(21,1)">
+                                        <p class="font-weight-bold text-success mt-1 mb-0">
+                                            <span
+                                                class="font-weight-normal center-block text-black-50 fade"><del></del></span>
+                                            $2.49
+                                        </p>
+                                        <p class="text-muted my-0 {{size-visibility}}">(2 Lb)</p>
+                                    </div>
+                                </div>
+                                <div class="row add-to-basket-div hide">
+                                    <button type="button" id="add-to-basket21"
+                                        class="btn btn-outline-success add-to-basket mb-1 mx-1" data-options=""
+                                        data-productname="Banana - 2 Lb" data-productid="21"
+                                        title="Basket orders for Scheduled automated deliveries"><i
+                                            class="fa fa-shopping-basket"></i><b> Add to basket</b></button>
+                                </div>
+                                <div class="row add-to-cart-div">
+                                    <button class="btn btn-default btn-oos center-block d-none" disabled=""> Out Of
+                                        Stock </button>
+                                    <button class="center-block add-to-cart " id="add-to-cart-21"
+                                        data-test-id="add-button">Add to Cart <i
+                                            class="fa fa-shopping-cart fa-lg"></i></button>
+                                    <div class="center-block quantity" id="quantityhomelist21">
+                                        <button class="minus-btn btn-quantity btn-success" type="button" data-options=""
+                                            data-productid="21" name="button">
+                                            -
+                                        </button>
+                                        <input type="text" class="item-quantity" data-options="" name="qtyoffer21"
+                                            data-productname="Banana - 2 Lb" data-productid="21" data-storeid="1"
+                                            value="1">
+                                        <button class="plus-btn btn-quantity btn-success" type="button" name="button">
+                                            + <i class="fa fa-shopping-cart fa-lg"></i>
+                                        </button>&nbsp;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="product-container">
+                        <div class="product-item">
+                            <div class="product-card">
+                                <br><br><br><br>
+                                <div class="row">
+                                    <a class="center-block add-to-cart" data-test-id="add-button"
+                                        onclick="loadCategoryPage('954')">See All &gt;</a>
+                                </div>
+                                <br><br><br><br>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
+        </div>
 
     </section>
-
     <!-- conatining -->
-    <section class="container">
+    <section class="container mt-5 mb-5">
         <h4 class="text-center text-uppercase mt-4"> Limited quantity Available.Pre-orders Open now </h4>
         <hr class="col-1 font-weight-bold bg-warning my-2 pb-1">
 
@@ -324,14 +382,83 @@
             </p>
         </div>
         <div class="container row justify-content-around mt-3 mb-3">
-            <img class="season-card" src="np/image/season-reward1.jpg" alt="Mango">
+            <img class=" col-lg-3 col-12 season-card" src="np/image/season-reward1.jpg" alt="Mango">
 
-            <img class="season-card" src="np/image/season-reward1.jpg" alt="Mango">
-            <img class="season-card" src="np/image/season-reward1.jpg" alt="Mango">
-            <img class="season-card" src="np/image/season-reward1.jpg" alt="Mango">
+            <img class="col-lg-3 col-12 season-card" src="np/image/season-reward1.jpg" alt="Mango">
+            <img class="col-lg-3 col-12 season-card" src="np/image/season-reward1.jpg" alt="Mango">
+            <img class="col-lg-3 col-12 season-card" src="np/image/season-reward1.jpg" alt="Mango">
         </div>
 
     </section>
+    <!-- banner -->
+
+    <section class="gradient mt-5 mb-5 position-relative">
+        <div class=" col-12 text-center mt-5 land position-relative">
+            <h2 class="pt-5">Why Our Mangoes?</h2>
+            <p>
+                End of the season mangoes are
+                looking great and arriving well
+            </p>
+        </div>
+        <div class="row " id="">
+            <div class="col-md-12 pl-5 row justify-content-center align-self-center">
+                <ul class="fa-ul mango-specialists text-left mt-5">
+                    <li>
+                        <span class="fa-li"><i class="fa fa-lemon"></i></span>
+                        <h3>What</h3>
+                        <p>Specializes in tropical fruits, including mangoes. With over 10 years of experience.</p>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-apple"></i></span>
+                        <h3>why</h3>
+                        <p>Known for her expertise in mango cultivation techniques and pest control.</p>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-leaf"></i></span>
+                        <h3>Where</h3>
+                        <p>Passionate about organic mango farming and sustainable practices.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 row justify-content-end align-self-end text-center position-absolute ">
+                <img class="img-fluid" src="./np/image/rm-9.png" alt="">
+            </div>
+        </div>
+        <div class="row justify-content-center align-self-end text-center">
+            <div> <img class="img-land i" src="./np/image/rm-7.png" alt=""></div>
+
+
+            <div class="row justify-content-center">
+                <div class="counter-container">
+
+                    <div class="counter" data-target="2000">+</div>
+                    <span>Customer</span>
+                </div>
+                <div class="counter-container">
+
+                    <div class="counter" data-target="8000"></div>
+                    <span>Project</span>
+                </div>
+                <div class="counter-container">
+
+                    <div class="counter" data-target="8000"></div>
+                    <span>Protein</span>
+                </div>
+                <div class="counter-container">
+
+                    <div class="counter" data-target="8000"></div>
+                    <span>Instagram Followers</span>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+
+
+
 
     <!-- journey -->
     <section class="mt-5 mb-5">
@@ -395,7 +522,7 @@
     </section>
 
     <!-- features -->
-    <section id="mangofeatures" class=" container  border-top border-bottom mt-2 mb-3">
+    <section id="mangofeatures mt-5 mb-5" class=" container  border-top border-bottom mt-2 mb-3">
         <h4 class="text-center text-uppercase mt-4"><b>Our</b> Promise &amp; <b>Your</b> Trust</h4>
         <hr class="col-1 font-weight-bold bg-warning my-2 pb-1">
         <div class="mt-5">
@@ -563,7 +690,7 @@
 
 
         <!-- accordition -->
-        <div class="mt-5 mb-5">
+        <div class="mt-5 mb-5 " id="faqsS">
             <h4 class="text-center mb-3"><b>FAQs</b></h4>
             <hr class="col-1 font-weight-bold bg-warning my-2 pb-1 mb-3">
             <div class="accordion" id="accordionExample">
@@ -573,11 +700,13 @@
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h2 class="mb-0">
-                            <button class="btn  btn-block  btn-outline-focus  text-left collapsed" type="button"
-                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
-                                aria-controls="collapseOne">
-                                What are pre-orders?
+                            <button
+                                class="btn btn-block btn-outline-focus text-left d-flex justify-content-between align-items-center collapsed"
+                                type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                aria-controls="collapseOne" onclick="toggleRotateIcon(this)">
+                                What are pre-orders?<i class="fa fa-chevron-down" aria-hidden="true"></i>
                             </button>
+
                         </h2>
                     </div>
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -593,10 +722,12 @@
                 <div class="card">
                     <div class="card-header" id="headingTwo">
                         <h2 class="mb-0">
-                            <button class="btn  btn-block text-left  btn-outline-focus btn-outline-none collapsed"
+                            <button
+                                class="btn btn-block btn-outline-focus text-left d-flex justify-content-between align-items-center collapsed"
                                 type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                aria-controls="collapseTwo">
-                                Why should I buy during pre-order and not buy when its available?
+                                aria-controls="collapseTwo" onclick="toggleRotateIcon(this)">
+                                Why should I buy during pre-order and not buy when its available?<i
+                                    class="fa fa-chevron-down" aria-hidden="true"></i>
                             </button>
                         </h2>
                     </div>
@@ -613,9 +744,11 @@
                 <div class="card">
                     <div class="card-header" id="headingThree">
                         <h2 class="mb-0">
-                            <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Can I cancel my pre-order?
+                            <button
+                                class="btn btn-block btn-outline-focus text-left d-flex justify-content-between align-items-center collapsed"
+                                type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree" onclick="toggleRotateIcon(this)">
+                                Can I cancel my pre-order?<i class="fa fa-chevron-down" aria-hidden="true"></i>
                             </button>
                         </h2>
                     </div>
@@ -634,9 +767,11 @@
                 <div class="card">
                     <div class="card-header" id="headingFour">
                         <h2 class="mb-0">
-                            <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Is there a timeline for delivery?
+                            <button
+                                class="btn btn-block btn-outline-focus text-left d-flex justify-content-between align-items-center collapsed"
+                                type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour" onclick="toggleRotateIcon(this)">
+                                Is there a timeline for delivery?<i class="fa fa-chevron-down" aria-hidden="true"></i>
                             </button>
                         </h2>
                     </div>
@@ -652,9 +787,12 @@
                 <div class="card">
                     <div class="card-header" id="headingFive">
                         <h2 class="mb-0">
-                            <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                How do I know if the Mango is fully ripe?
+                            <button
+                                class="btn btn-block btn-outline-focus text-left d-flex justify-content-between align-items-center collapsed"
+                                type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                aria-controls="collapseFive" onclick="toggleRotateIcon(this)">
+                                How do I know if the Mango is fully ripe?<i class="fa fa-chevron-down"
+                                    aria-hidden="true"></i>
                             </button>
                         </h2>
                     </div>
@@ -673,9 +811,11 @@
                 <div class="card">
                     <div class="card-header" id="headingSix">
                         <h2 class="mb-0">
-                            <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                How to safely store Mangoes?
+                            <button
+                                class="btn btn-block btn-outline-focus text-left d-flex justify-content-between align-items-center collapsed"
+                                type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                                aria-controls="collapseSix" onclick="toggleRotateIcon(this)">
+                                How to safely store Mangoes?<i class="fa fa-chevron-down" aria-hidden="true"></i>
                             </button>
                         </h2>
                     </div>
@@ -694,9 +834,12 @@
                 <div class="card">
                     <div class="card-header" id="headingSeven">
                         <h2 class="mb-0">
-                            <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                What is the refund policy on Mangoes?
+                            <button
+                                class="btn btn-block btn-outline-focus text-left d-flex justify-content-between align-items-center collapsed"
+                                type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
+                                aria-controls="collapseSeven" onclick="toggleRotateIcon(this)">
+                                What is the refund policy on Mangoes?<i class="fa fa-chevron-down"
+                                    aria-hidden="true"></i>
 
                             </button>
                         </h2>
@@ -731,9 +874,12 @@
                 <div class="card">
                     <div class="card-header" id="headingEight">
                         <h2 class="mb-0">
-                            <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                How do you make sure our mangoes come in good shape?
+                            <button
+                                class="btn btn-block btn-outline-focus text-left d-flex justify-content-between align-items-center collapsed"
+                                type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false"
+                                aria-controls="collapseEight" onclick="toggleRotateIcon(this)">
+                                How do you make sure our mangoes come in good shape?<i class="fa fa-chevron-down"
+                                    aria-hidden="true"></i>
                             </button>
                         </h2>
                     </div>
@@ -751,9 +897,11 @@
                 <div class="card">
                     <div class="card-header" id="headingNine">
                         <h2 class="mb-0">
-                            <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                How many mangoes are in a box?
+                            <button
+                                class="btn btn-block btn-outline-focus text-left d-flex justify-content-between align-items-center collapsed"
+                                type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false"
+                                aria-controls="collapseNine" onclick="toggleRotateIcon(this)">
+                                How many mangoes are in a box?<i class="fa fa-chevron-down" aria-hidden="true"></i>
                             </button>
                         </h2>
                     </div>
@@ -771,9 +919,12 @@
                 <div class="card">
                     <div class="card-header" id="headingTen">
                         <h2 class="mb-0">
-                            <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                                Can I return mango box if I don't like it?
+                            <button
+                                class="btn btn-block btn-outline-focus text-left d-flex justify-content-between align-items-center collapsed"
+                                type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false"
+                                aria-controls="collapseTen" onclick="toggleRotateIcon(this)">
+                                Can I return mango box if I don't like it?<i class="fa fa-chevron-down"
+                                    aria-hidden="true"></i>
                             </button>
                         </h2>
                     </div>
@@ -791,9 +942,11 @@
                 <div class="card">
                     <div class="card-header" id="headingEleven">
                         <h2 class="mb-0">
-                            <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                                How many mangoes will be in a box?
+                            <button
+                                class="btn btn-block btn-outline-focus text-left d-flex justify-content-between align-items-center collapsed"
+                                type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false"
+                                aria-controls="collapseEleven" onclick="toggleRotateIcon(this)">
+                                How many mangoes will be in a box?<i class="fa fa-chevron-down" aria-hidden="true"></i>
                             </button>
                         </h2>
                     </div>
@@ -812,9 +965,11 @@
                 <div class="card">
                     <div class="card-header" id="headingTwelve">
                         <h2 class="mb-0">
-                            <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-                                When will I get my delivery?
+                            <button
+                                class="btn btn-block btn-outline-focus text-left d-flex justify-content-between align-items-center collapsed"
+                                type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false"
+                                aria-controls="collapseTwelve" onclick="toggleRotateIcon(this)">
+                                When will I get my delivery?<i class="fa fa-chevron-down" aria-hidden="true"></i>
                             </button>
                         </h2>
                     </div>
@@ -834,9 +989,11 @@
                 <div class="card">
                     <div class="card-header" id="headingThirteen">
                         <h2 class="mb-0">
-                            <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-                                Can I order my mangoes for now?
+                            <button
+                                class="btn btn-block btn-outline-focus text-left d-flex justify-content-between align-items-center collapsed"
+                                type="button" data-toggle="collapse" data-target="#collapseThirteen"
+                                aria-expanded="false" aria-controls="collapseThirteen" onclick="toggleRotateIcon(this)">
+                                Can I order my mangoes for now?<i class="fa fa-chevron-down" aria-hidden="true"></i>
                             </button>
                         </h2>
                     </div>
@@ -853,7 +1010,6 @@
             </div>
 
         </div>
-
 
 
         <hr>
@@ -930,46 +1086,7 @@
 
 
 
-        <div class="row feature-row">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="row">
-                    <div class="feature-image col-lg-3"><img alt="Best Price" src="np/image/bestprice_03.jpg"
-                            data-src="np/image/bestprice_03.jpg" class="img-fluid center-block align-middle"
-                            title="price match garunteed with local store"></div>
-                    <div class="col-lg-9">
-                        <div class="feature-row-name">Best Prices &amp; Offers</div>
-                        <div class="feature-row-description">Cheaper prices than your local supermarket, We beat all
-                            Local store prices and Quality, all the time!</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="row">
-                    <div class="feature-image col-lg-3"><img alt="Huge Product Selection"
-                            src="np/image/wide_assortment.jpg" data-src="np/image/wide_assortment.jpg"
-                            class="img-fluid center-block align-middle"
-                            title="Choose from 5000+ products across food, personal care, household &amp; other categories. All Indian Groceries.">
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="feature-row-name">Wide Assortment</div>
-                        <div class="feature-row-description">Choose from 5000+ products across food, personal care,
-                            household &amp; other categories. All Indian Groceries.</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="row">
-                    <div class="feature-image col-lg-3"><img alt="Easy Returns" src="np/image/easyreturns_02.jpg"
-                            data-src="np/image/easyreturns_02.jpg" class="img-fluid center-block align-middle"
-                            title="Convinience in a click"></div>
-                    <div class="col-lg-9">
-                        <div class="feature-row-name">Hassle Free Returns</div>
-                        <div class="feature-row-description">Not satisfied with a product? Get Replacement or Refund on
-                            all products with our Hassle Free Return Policy. </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -981,6 +1098,41 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"
             integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+            const counters = document.querySelectorAll(".counter");
+            counters.forEach((counter) => {
+                const target = +counter.getAttribute("data-target");
+                let count = 0;
+                const updateCounter = () => {
+                    const increment = target / target * 100; // Adjust the speed of animation
+                    count += increment;
+                    counter.innerText = Math.floor(count);
+                    if (count < target) {
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.innerText = target + "+";
+                    }
+                };
+                updateCounter();
+            });
+        </script>
+        <script>
+            function toggleRotateIcon(button) {
+
+                document.querySelectorAll('#faqs i.fa-chevron-down.rotate-icon').forEach(icon => {
+                    if (icon.parentElement != button) {
+                        icon.classList.remove('rotate-icon');
+                    }
+                });
+
+                // Toggle the transform style when the button is clicked
+                var icon = button.querySelector('i');
+                icon.classList.toggle('rotate-icon');
+                // icon.style.transform = icon.style.transform === 'rotate(180deg)' ? '' : 'rotate(180deg)';
+            }
+        </script>
+
 </body>
 
 </html>
