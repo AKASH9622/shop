@@ -51,14 +51,25 @@
             height: 60% !important;
         }
 
-        .img-responsive {
+        .img-responsive.one-cont {
             height: 272.5px !important;
 
         }
+        @media (max-width: 767px) {
+            .img-responsive.one-cont {
+              height: 366.5px !important;
+              width: 80%;
+            }
 
+            .img-responsive.three-cont {
+            height: 60% !important;
+            width: 80%;
+           }
+        }
         .season-card {
 
-            height: 250px;
+            height: 300px;
+            max-width: 60% !important
         }
 
         @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
@@ -122,6 +133,11 @@
 
         .row {
             z-index: 100;
+        }
+
+        .carousel-indicators{
+
+            bottom: -50px !important;
         }
 
         ul.fa-ul.mango-specialists.text-left.mt-5 {}
@@ -381,11 +397,11 @@
             </p>
         </div>
         <div class="container row justify-content-around mt-3 mb-3">
-            <img class=" col-lg-3 col-md-6 col-12 season-card" src="np/image/season-reward1.jpg" alt="Mango">
+            <img class=" col-lg-3 col-md-6 col-12 season-card mb-4" src="np/image/season-reward1.jpg" alt="Mango">
 
-            <img class="col-lg-3 col-md-6 col-12 season-card" src="np/image/season-reward1.jpg" alt="Mango">
-            <img class="col-lg-3 col-md-6 col-12 season-card" src="np/image/season-reward1.jpg" alt="Mango">
-            <img class="col-lg-3 col-md-6 col-12 season-card" src="np/image/season-reward1.jpg" alt="Mango">
+            <img class="col-lg-3 col-md-6 col-12 season-card mb-4" src="np/image/season-reward1.jpg" alt="Mango">
+            <img class="col-lg-3 col-md-6 col-12 season-card mb-4 " src="np/image/season-reward1.jpg" alt="Mango">
+            <img class="col-lg-3 col-md-6 col-12 season-card mb-4" src="np/image/season-reward1.jpg" alt="Mango">
         </div>
 
     </section>
@@ -403,17 +419,17 @@
             <div class="col-md-12 pl-5 row justify-content-center align-self-center">
                 <ul class="fa-ul mango-specialists text-left mt-5">
                     <li>
-                        <span class="fa-li"><i class="fa fa-lemon"></i></span>
+                        <span class="fa-li"><i class="fa fa-dot-circle-o"></i></span>
                         <h3>What</h3>
                         <p>Specializes in tropical fruits, including mangoes. With over 10 years of experience.</p>
                     </li>
                     <li>
-                        <span class="fa-li"><i class="fa fa-apple"></i></span>
+                        <span class="fa-li"><i class="fa fa-dot-circle-o"></i></span>
                         <h3>why</h3>
                         <p>Known for her expertise in mango cultivation techniques and pest control.</p>
                     </li>
                     <li>
-                        <span class="fa-li"><i class="fa fa-leaf"></i></span>
+                        <span class="fa-li"><i class="fa fa-dot-circle-o"></i></span>
                         <h3>Where</h3>
                         <p>Passionate about organic mango farming and sustainable practices.</p>
                     </li>
@@ -431,22 +447,22 @@
                 <div class="counter-container">
 
                     <div class="counter" data-target="2000">+</div>
-                    <span>Customer</span>
+                    <span style="font-size: 24px; "><b>Customer</b></span>
                 </div>
                 <div class="counter-container">
 
                     <div class="counter" data-target="8000"></div>
-                    <span>Project</span>
+                    <span class="" style="font-size: 24px; "><b>Project</b></span>
                 </div>
                 <div class="counter-container">
 
                     <div class="counter" data-target="8000"></div>
-                    <span>Protein</span>
+                    <span style="font-size: 24px; "><b>Protein</b></span>
                 </div>
                 <div class="counter-container">
 
                     <div class="counter" data-target="8000"></div>
-                    <span>Instagram Followers</span>
+                    <span style="font-size: 24px; "><b>Instagram Followers</b></span>
                 </div>
             </div>
         </div>
@@ -595,16 +611,16 @@
             <div class="carousel-inner carousel-caption">
                 <div class="carousel-item active">
                     <div class="row">
-                        <div class="col-md-6 col-lg-6 py-3">
-                            <div class="testimonial min-vh-75" style="min-height:220px">
+                        <div class="col-md-6 col-lg-6 py-3"style="min-height:250px">
+                            <div class="testimonial min-vh-75" style="min-height:250px">
                                 <i class="fa fa-quote-left d-inline text-light fa-3x"></i>
                                 <p class="d-inline ml-2">These Mangoes were really sweet and tasty, we tried every
                                     single variety last year. Definitely recommended.</p>
                                 <div class="customername">Snehal</div>
                             </div>
                         </div>
-                        <div class="d-none d-md-block col-md-6 col-lg-6 py-3">
-                            <div class="testimonial  min-vh-75" style="min-height:220px">
+                        <div class="d-none d-md-block col-md-6 col-lg-6 py-3 " style="min-height:250px">
+                            <div class="testimonial  min-vh-75" style="min-height:240px">
                                 <i class="fa fa-quote-left  d-inline text-light fa-3x"></i>
                                 <p class="d-inline ml-2">Mangoes had good aroma. Feels nostalgic. Thanks for bringing
                                     this to us.</p>
@@ -615,8 +631,8 @@
                 </div>
                 <div class="carousel-item">
                     <div class="row">
-                        <div class="col-md-6 col-lg-6 py-3" style="min-height:220px">
-                            <div class="testimonial  min-vh-75" style="min-height:220px">
+                        <div class="col-md-6 col-lg-6 py-3" style="min-height:250px">
+                            <div class="testimonial  min-vh-75" style="min-height:250px">
                                 <i class="fa fa-quote-left d-inline text-light fa-3x"></i>
                                 <p class="d-inline ml-2">Overall very happy with the types of mangoes we received.
                                     Enjoyed thoroughly with
@@ -624,8 +640,8 @@
                                 <div class="customername">- Rekha P</div>
                             </div>
                         </div>
-                        <div class="d-none d-md-block col-md-6 col-lg-6 py-3" style="min-height:220px">
-                            <div class="testimonial min-vh-75" style="min-height:220px">
+                        <div class="d-none d-md-block col-md-6 col-lg-6 py-3" style="min-height:250px">
+                            <div class="testimonial min-vh-75" style="min-height:250px">
                                 <i class="fa fa-quote-left d-inline  text-light fa-3x"></i>
                                 <p class="d-inline ml-2">Bought few boxes and did not last for long. Delivery and
                                     notifications were useful
@@ -637,8 +653,8 @@
                 </div>
                 <div class="carousel-item">
                     <div class="row">
-                        <div class="col-md-6 col-lg-6 py-3" style="min-height:220px">
-                            <div class="testimonial  min-vh-75" style="min-height:220px">
+                        <div class="col-md-6 col-lg-6 py-3" style="min-height:250px">
+                            <div class="testimonial  min-vh-75" style="min-height:250px">
                                 <i class="fa fa-quote-left d-inline text-light fa-3x"></i>
                                 <p class="d-inline ml-2">We have been buying mangoes from Shoperies for over 4 years
                                     now. Simply amazed with
@@ -648,8 +664,8 @@
                                 <div class="customername">- Viji V</div>
                             </div>
                         </div>
-                        <div class="d-none d-md-block col-md-6 col-lg-6 py-3" style="min-height:220px">
-                            <div class="testimonial  min-vh-75" style="min-height:220px">
+                        <div class="d-none d-md-block col-md-6 col-lg-6 py-3" style="min-height:250px">
+                            <div class="testimonial  min-vh-75" style="min-height:250px">
                                 <i class="fa fa-quote-left d-inline text-light fa-3x"></i>
                                 <p class="d-inline ml-2">Getting indian mangoes in Seattle is a delicacy, that too in
                                     such prestine and tasty
@@ -661,8 +677,8 @@
                 </div>
                 <div class="carousel-item">
                     <div class="row">
-                        <div class="col-md-6 col-lg-6 py-3" style="min-height:220px">
-                            <div class="testimonial  " style="min-height:220px">
+                        <div class="col-md-6 col-lg-6 py-3" style="min-height:250px">
+                            <div class="testimonial  " style="min-height:250px">
                                 <i class="fa fa-quote-left  text-light fa-3x"></i>
                                 <p class="d-inline ml-2">The wait is worth it. We tried the banganapalle and they were
                                     simply awesome. Though
@@ -670,10 +686,8 @@
                                 <div class="customername">- Venkatesh</div>
                             </div>
                         </div>
-                        <div class="d-none d-md-block col-md-6 col-lg-6 py-3" style="min-height:220px">
-
-
-                            <div class="testimonial  " style="min-height:220px">
+                        <div class="d-none d-md-block col-md-6 col-lg-6 py-3" style="min-height:250px">
+                            <div class="testimonial  " style="min-height:240px">
                                 <i class="fa fa-quote-left  text-light fa-3x"></i>
                                 <p class="d-inline ml-2">My whole family became mango zombies after eating a box of
                                     Rasalu. They were so
@@ -1034,16 +1048,16 @@
                     <div class="carousel-item active" style="height: 300px !important;">
                         <div class="row">
                             <div class="col-md-3 col-lg-3 py-3 ">
-                                <img class="img-responsive " src="np/image/shoperies_mangoes_9.jpeg" />
+                                <img class="img-responsive one-cont" src="np/image/shoperies_mangoes_9.jpeg" />
                             </div>
                             <div class="d-none d-md-block col-md-3 col-lg-3 py-3">
-                                <img class="img-responsive " src="np/image/shoperies_mangoes_10.jpeg" />
+                                <img class="img-responsive one-cont" src="np/image/shoperies_mangoes_10.jpeg" />
                             </div>
                             <div class="col-md-3 col-lg-3 py-3">
-                                <img class="img-responsive " src="np/image/shoperies_mangoes_11.jpeg" />
+                                <img class="img-responsive one-cont" src="np/image/shoperies_mangoes_11.jpeg" />
                             </div>
                             <div class="d-none d-md-block col-md-3 col-lg-3 py-3">
-                                <img class="img-responsive " src="np/image/shoperies_mangoes_12.jpeg" />
+                                <img class="img-responsive one-cont" src="np/image/shoperies_mangoes_12.jpeg" />
                             </div>
                         </div>
                     </div>
