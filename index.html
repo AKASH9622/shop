@@ -135,7 +135,7 @@
             z-index: 100;
         }
 
-        .carousel-indicators{
+        .carousel-indicators.mamgoes-last{
 
             bottom: -50px !important;
         }
@@ -152,6 +152,22 @@
             transition: transform 0.3s ease;
             /* Add a smooth transition effect */
         }
+
+        .journey{
+            top:0;
+            right:0;
+            
+        }
+        .image{
+            height: 400px;
+        }
+        @media (max-width: 992px) {
+            .image {
+                display: none;
+            }
+        }
+
+
     </style>
 
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css'>
@@ -476,7 +492,10 @@
 
 
     <!-- journey -->
-    <section class="mt-5 mb-5">
+    <section class="mt-5 mb-5 position-relative " >
+        <div class="position-absolute journey">
+            <img src="./np/image/rm-10.png" class="image" alt="">
+        </div>
         <h4 class="text-center text-uppercase mt-4 mb-3">Journey of <b>Shoperies</b> Mangoes</h4>
         <hr class="col-1 font-weight-bold bg-warning my-2 pb-1 mb-5">
         <div class="container mt-2">
@@ -592,7 +611,8 @@
         </div>
     </section>
 
-    <div class="container px-0 hide mt-5 mb-5" id="mangodiv">
+    <div class="container px-0 hide mt-5 mb-5 " id="mangodiv">
+      
         <div id="mangotestimonials" class="carousel slide carousel-fade px-1 py-2 my-2" data-ride="carousel">
             <h4 class="text-center text-uppercase">What <b>our customers</b> are saying</h4>
             <hr class="col-1 font-weight-bold bg-warning my-2 pb-1">
@@ -707,8 +727,9 @@
         <div class="mt-5 mb-5 " id="faqsS">
             <h4 class="text-center mb-3"><b>FAQs</b></h4>
             <hr class="col-1 font-weight-bold bg-warning my-2 pb-1 mb-3">
+            
             <div class="accordion" id="accordionExample">
-
+               
 
                 <!-- Card 1 -->
                 <div class="card">
@@ -1039,7 +1060,7 @@
                     <a class="right fa fa-chevron-right btn btn-default testimonial_btn" href="#mangoimages"
                         data-slide="next"></a>
                 </div>
-                <ol class="carousel-indicators">
+                <ol class="carousel-indicators mamgoes-last">
                     <li data-target="#mangoimages" data-slide-to="0" class="bg-success active"></li>
                     <li data-target="#mangoimages" data-slide-to="1" class="bg-success"></li>
                     <li data-target="#mangoimages" data-slide-to="2" class="bg-success"></li>
