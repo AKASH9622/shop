@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-
+   
     <style>
         #MenuNavBar {
             position: fixed;
@@ -55,6 +55,18 @@
             height: 272.5px !important;
 
         }
+        @media (min-width: 993px) and (max-width: 1119px) {
+            .img-responsive.one-cont {
+            height: 224.5px !important;
+
+        }
+    }
+        @media (min-width: 767px) and (max-width: 992px) {
+            .img-responsive.one-cont {
+            height: 160.5px !important;
+
+        }
+        }
         @media (max-width: 767px) {
             .img-responsive.one-cont {
               height: 366.5px !important;
@@ -66,13 +78,28 @@
             width: 80%;
            }
         }
-        .season-card {
 
-            height: 300px;
-            max-width: 60% !important
-        }
+          
+             
+                .season-card {
+                    background-image: url('../shop/np/image/mango.jfif');  
+                    background-size: 100% 100%; 
+                    background-position: center; 
+                    width: 100%;
+                    height: 300px;
+                    color: white;
+                }
 
-        @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+                .card-inside h6{
+                    font-size: 22px;
+                    font-weight: bolder;
+                }
+                .card-inside span{
+                    font-size: 16px;
+                    font-weight:600;
+                }
+                
+            @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
         * {
             box-sizing: border-box;
@@ -119,7 +146,7 @@
             top: 0;
             right: 0;
             height: 550px !important;
-            opacity: 0.7;
+            opacity: 0.5;
             z-index: 1;
         }
 
@@ -155,7 +182,7 @@
 
         .journey{
             top:0;
-            right:0;
+            right: -30px;;
             
         }
         .image{
@@ -167,6 +194,19 @@
             }
         }
 
+        .lighter{
+            color: #cdffd8 !important;
+        }
+           
+        .over-card{
+             top: 50%;
+             left:50%;
+             right: 50%;
+             transform: translate(-50%,-50%);
+             color: whitesmoke;
+             
+
+            }
 
     </style>
 
@@ -412,13 +452,42 @@
                 LANGRA (North India), KESAR (Kach)<br>Pre-orders will be opened 6/17. <br>Next shipment arriving 6/21.
             </p>
         </div>
-        <div class="container row justify-content-around mt-3 mb-3">
-            <img class=" col-lg-3 col-md-6 col-12 season-card mb-4" src="np/image/season-reward1.jpg" alt="Mango">
+        <div class="container-fluid row justify-content-between mt-3 mb-3">
+            
+            <div  class="col-lg-2 col-md-6 col-12  d-flex mb-2 justify-content-center season-card">
+                <div class="card-inside d-flex justify-content-center align-items-center flex-column mb-3">
+                  <h6 class="text-center">
+                    One time delivery
+                  </h6>
+                   <span class="card-inside px-4"> Order when you want</span>
+            </div>
+            </div>
 
-            <img class="col-lg-3 col-md-6 col-12 season-card mb-4" src="np/image/season-reward1.jpg" alt="Mango">
-            <img class="col-lg-3 col-md-6 col-12 season-card mb-4 " src="np/image/season-reward1.jpg" alt="Mango">
-            <img class="col-lg-3 col-md-6 col-12 season-card mb-4" src="np/image/season-reward1.jpg" alt="Mango">
-        </div>
+            <div class="col-lg-2 col-md-6 col-12   d-flex mb-2 justify-content-center season-card"> 
+                <div class="card-inside d-flex justify-content-center align-items-center flex-column mb-3">
+                <h6 class="text-center">
+                    Fortnightly
+                 </h6>
+                 <span class="px-2">One box every 2 weeks </span>
+                 </div>
+             </div>
+            <div class="col-lg-2 col-md-6 col-12   mb-3 d-flex mb-2 justify-content-center season-card">
+                <div class="card-inside d-flex justify-content-center align-items-center flex-column mb-2">
+                    <h6 class="text-center">
+                        Monthly
+                    </h6>
+                    <span class="px-3">One box every month</span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-12   d-flex mb-2 justify-content-center season-card">
+                <div class="card-inside d-flex justify-content-center align-items-center flex-column mb-2">
+                        <h6 class="text-center">
+                            Season pass
+                        </h6>
+                        <span class="px-3">One box weekly through the season</span>
+                </div>
+            </div>
+            </div>
 
     </section>
     <!-- banner -->
@@ -441,7 +510,7 @@
                     </li>
                     <li>
                         <span class="fa-li"><i class="fa fa-dot-circle-o"></i></span>
-                        <h3>why</h3>
+                        <h3>Why</h3>
                         <p>Known for her expertise in mango cultivation techniques and pest control.</p>
                     </li>
                     <li>
@@ -451,35 +520,30 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-6 row justify-content-end align-self-end text-center position-absolute ">
+            <div class="col-md-6 row justify-content-end align-self-end text-center position-absolute p-0 ">
                 <img class="img-fluid image-back" src="./np/image/rm-9.png" alt="">
             </div>
         </div>
-        <div class="row justify-content-center align-self-end text-center">
-            <div> <img class="img-land i" src="./np/image/rm-7.png" alt=""></div>
+        <div class="row justify-content-center align-items-center text-center p-0 ">
+            <div class="col-lg-4"> <img class="img-land img-responsive i" src="./np/image/rm-7.png" alt=""></div>
 
 
-            <div class="row justify-content-center">
-                <div class="counter-container">
-
-                    <div class="counter" data-target="2000">+</div>
+            <div class="row justify-content-center align-items-center col-lg-8 mb-5">
+                <div class="counter-container mx-3 col-md-3 m-0">
+                    <div class="counter" data-target="2000">20000</div>
                     <span style="font-size: 24px; "><b>Customer</b></span>
                 </div>
-                <div class="counter-container">
-
-                    <div class="counter" data-target="8000"></div>
+                <div class="counter-container mx-3 col-md-3 m-0">
+                     
+                    <div class="counter d-inline" >1000</div> 
                     <span class="" style="font-size: 24px; "><b>Project</b></span>
                 </div>
-                <div class="counter-container">
-
-                    <div class="counter" data-target="8000"></div>
+                <div class="counter-container mx-3 col-md-3 m-0">
+ 
+                    <div class="counter" data-target="8000">1000</div>
                     <span style="font-size: 24px; "><b>Protein</b></span>
                 </div>
-                <div class="counter-container">
-
-                    <div class="counter" data-target="8000"></div>
-                    <span style="font-size: 24px; "><b>Instagram Followers</b></span>
-                </div>
+               
             </div>
         </div>
 
@@ -556,7 +620,7 @@
     </section>
 
     <!-- features -->
-    <section id="mangofeatures mt-5 mb-5" class=" container  border-top border-bottom mt-2 mb-3">
+    <section id="mangofeatures mt-5 mb-5" class=" container   mt-2 mb-3">
         <h4 class="text-center text-uppercase mt-4"><b>Our</b> Promise &amp; <b>Your</b> Trust</h4>
         <hr class="col-1 font-weight-bold bg-warning my-2 pb-1">
         <div class="mt-5">
@@ -623,26 +687,26 @@
                     data-slide="next"></a>
             </div>
             <ol class="carousel-indicators">
-                <li data-target="#mangotestimonials" data-slide-to="0" class="bg-success active"></li>
-                <li data-target="#mangotestimonials" data-slide-to="1" class="bg-success"></li>
-                <li data-target="#mangotestimonials" data-slide-to="2" class="bg-success"></li>
-                <li data-target="#mangotestimonials" data-slide-to="3" class="bg-success"></li>
+                <li data-target="#mangotestimonials" data-slide-to="0" class="bg-warning active"></li>
+                <li data-target="#mangotestimonials" data-slide-to="1" class="bg-warning"></li>
+                <li data-target="#mangotestimonials" data-slide-to="2" class="bg-warning"></li>
+                <li data-target="#mangotestimonials" data-slide-to="3" class="bg-warning"></li>
             </ol>
             <div class="carousel-inner carousel-caption">
                 <div class="carousel-item active">
                     <div class="row">
-                        <div class="col-md-6 col-lg-6 py-3"style="min-height:250px">
+                        <div class="col-md-6 col-lg-6 py-3"style="min-height:270px">
                             <div class="testimonial min-vh-75" style="min-height:250px">
-                                <i class="fa fa-quote-left d-inline text-light fa-3x"></i>
-                                <p class="d-inline ml-2">These Mangoes were really sweet and tasty, we tried every
+                                <i class="fa fa-quote-left  d-inline  lighter fa-3x"></i>
+                                <p class="d-inline ">These Mangoes were really sweet and tasty, we tried every
                                     single variety last year. Definitely recommended.</p>
                                 <div class="customername">Snehal</div>
                             </div>
                         </div>
-                        <div class="d-none d-md-block col-md-6 col-lg-6 py-3 " style="min-height:250px">
-                            <div class="testimonial  min-vh-75" style="min-height:240px">
-                                <i class="fa fa-quote-left  d-inline text-light fa-3x"></i>
-                                <p class="d-inline ml-2">Mangoes had good aroma. Feels nostalgic. Thanks for bringing
+                        <div class="d-none d-md-block col-md-6 col-lg-6 py-3 " style="min-height:270px">
+                            <div class="testimonial  min-vh-75" style="min-height:250px">
+                                <i class="fa fa-quote-left  d-inline  lighter fa-3x"></i>
+                                <p class="d-inline ">Mangoes had good aroma. Feels nostalgic. Thanks for bringing
                                     this to us.</p>
                                 <div class="customername"> Ravinder</div>
                             </div>
@@ -651,19 +715,19 @@
                 </div>
                 <div class="carousel-item">
                     <div class="row">
-                        <div class="col-md-6 col-lg-6 py-3" style="min-height:250px">
+                        <div class="col-md-6 col-lg-6 py-3" style="min-height:270px">
                             <div class="testimonial  min-vh-75" style="min-height:250px">
-                                <i class="fa fa-quote-left d-inline text-light fa-3x"></i>
-                                <p class="d-inline ml-2">Overall very happy with the types of mangoes we received.
+                                <i class="fa fa-quote-left d-inline    lighter fa-3x"></i>
+                                <p class="d-inline ">Overall very happy with the types of mangoes we received.
                                     Enjoyed thoroughly with
                                     family.</p>
                                 <div class="customername">- Rekha P</div>
                             </div>
                         </div>
-                        <div class="d-none d-md-block col-md-6 col-lg-6 py-3" style="min-height:250px">
+                        <div class="d-none d-md-block col-md-6 col-lg-6 py-3" style="min-height:270px">
                             <div class="testimonial min-vh-75" style="min-height:250px">
-                                <i class="fa fa-quote-left d-inline  text-light fa-3x"></i>
-                                <p class="d-inline ml-2">Bought few boxes and did not last for long. Delivery and
+                                <i class="fa fa-quote-left d-inline   lighter fa-3x"></i>
+                                <p class="d-inline ">Bought few boxes and did not last for long. Delivery and
                                     notifications were useful
                                     and was on time. </p>
                                 <div class="customername">- Raj M</div>
@@ -673,10 +737,10 @@
                 </div>
                 <div class="carousel-item">
                     <div class="row">
-                        <div class="col-md-6 col-lg-6 py-3" style="min-height:250px">
+                        <div class="col-md-6 col-lg-6 py-3" style="min-height:270px">
                             <div class="testimonial  min-vh-75" style="min-height:250px">
-                                <i class="fa fa-quote-left d-inline text-light fa-3x"></i>
-                                <p class="d-inline ml-2">We have been buying mangoes from Shoperies for over 4 years
+                                <i class="fa fa-quote-left d-inline   lighter fa-3x"></i>
+                                <p class="d-inline ">We have been buying mangoes from Shoperies for over 4 years
                                     now. Simply amazed with
                                     the packing, delivery and consistency of these mangoes. Their mangoes are simply the
                                     best our favorites are Alphonso, Kesar and Rasalu. Though Banganapalle gives the
@@ -684,10 +748,10 @@
                                 <div class="customername">- Viji V</div>
                             </div>
                         </div>
-                        <div class="d-none d-md-block col-md-6 col-lg-6 py-3" style="min-height:250px">
+                        <div class="d-none d-md-block col-md-6 col-lg-6 py-3" style="min-height:270px">
                             <div class="testimonial  min-vh-75" style="min-height:250px">
-                                <i class="fa fa-quote-left d-inline text-light fa-3x"></i>
-                                <p class="d-inline ml-2">Getting indian mangoes in Seattle is a delicacy, that too in
+                                <i class="fa fa-quote-left d-inline   lighter fa-3x"></i>
+                                <p class="d-inline ">Getting indian mangoes in Seattle is a delicacy, that too in
                                     such prestine and tasty
                                     conditions simply wow. Good job Shoperies. </p>
                                 <div class="customername">- Rajesh</div>
@@ -697,19 +761,19 @@
                 </div>
                 <div class="carousel-item">
                     <div class="row">
-                        <div class="col-md-6 col-lg-6 py-3" style="min-height:250px">
+                        <div class="col-md-6 col-lg-6 py-3" style="min-height:270px">
                             <div class="testimonial  " style="min-height:250px">
-                                <i class="fa fa-quote-left  text-light fa-3x"></i>
-                                <p class="d-inline ml-2">The wait is worth it. We tried the banganapalle and they were
+                                <i class="fa fa-quote-left    lighter fa-3x"></i>
+                                <p class="d-inline ">The wait is worth it. We tried the banganapalle and they were
                                     simply awesome. Though
                                     it takes few days to ripen fully in seaatle their taste is heavenly.</p>
                                 <div class="customername">- Venkatesh</div>
                             </div>
                         </div>
-                        <div class="d-none d-md-block col-md-6 col-lg-6 py-3" style="min-height:250px">
-                            <div class="testimonial  " style="min-height:240px">
-                                <i class="fa fa-quote-left  text-light fa-3x"></i>
-                                <p class="d-inline ml-2">My whole family became mango zombies after eating a box of
+                        <div class="d-none d-md-block col-md-6 col-lg-6 py-3" style="min-height:270px">
+                            <div class="testimonial  " style="min-height:250px">
+                                <i class="fa fa-quote-left   lighter fa-3x"></i>
+                                <p class="d-inline ">My whole family became mango zombies after eating a box of
                                     Rasalu. They were so
                                     fibrous and tasty. </p>
                                 <div class="customername">- Babu M</div>
@@ -720,7 +784,7 @@
 
             </div>
         </div>
-        <hr>
+        
 
 
         <!-- accordition -->
@@ -1061,9 +1125,9 @@
                         data-slide="next"></a>
                 </div>
                 <ol class="carousel-indicators mamgoes-last">
-                    <li data-target="#mangoimages" data-slide-to="0" class="bg-success active"></li>
-                    <li data-target="#mangoimages" data-slide-to="1" class="bg-success"></li>
-                    <li data-target="#mangoimages" data-slide-to="2" class="bg-success"></li>
+                    <li data-target="#mangoimages" data-slide-to="0" class="bg-warning active"></li>
+                    <li data-target="#mangoimages" data-slide-to="1" class="bg-warning"></li>
+                    <li data-target="#mangoimages" data-slide-to="2" class="bg-warning"></li>
                 </ol>
                 <div class="carousel-inner carousel-caption mt-5" >
                     <div class="carousel-item active" style="height: 300px !important;">
@@ -1134,7 +1198,7 @@
             integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <script>
+        <!-- <script>
             const counters = document.querySelectorAll(".counter");
             counters.forEach((counter) => {
                 const target = +counter.getAttribute("data-target");
@@ -1151,7 +1215,7 @@
                 };
                 updateCounter();
             });
-        </script>
+        </script> -->
         <script>
             function toggleRotateIcon(button) {
 
@@ -1167,7 +1231,20 @@
                 // icon.style.transform = icon.style.transform === 'rotate(180deg)' ? '' : 'rotate(180deg)';
             }
         </script>
-
+         <script>
+            $(document).ready(function(){
+                $(".counter").counterUp({
+                    delay: 10,
+                    time:1200
+                    
+                });
+            });
+         </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/counterup2/2.0.2/index.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" ></script>
 </body>
 
 </html>
