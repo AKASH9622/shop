@@ -82,7 +82,7 @@
           
              
                 .season-card {
-                    background-image: url('../shop/np/image/mango.jfif');  
+                    background-image: url('./np/image/mango.jfif');  
                     background-size: 100% 100%; 
                     background-position: center; 
                     width: 100%;
@@ -195,7 +195,7 @@
         }
 
         .lighter{
-            color: #cdffd8 !important;
+            color: #f1fff4 !important;
         }
            
         .over-card{
@@ -1225,24 +1225,6 @@
             integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <!-- <script>
-            const counters = document.querySelectorAll(".counter");
-            counters.forEach((counter) => {
-                const target = +counter.getAttribute("data-target");
-                let count = 0;
-                const updateCounter = () => {
-                    const increment = target / target * 100; // Adjust the speed of animation
-                    count += increment;
-                    counter.innerText = Math.floor(count);
-                    if (count < target) {
-                        requestAnimationFrame(updateCounter);
-                    } else {
-                        counter.innerText = target + "+";
-                    }
-                };
-                updateCounter();
-            });
-        </script> -->
         <script>
             function toggleRotateIcon(button) {
 
@@ -1258,7 +1240,8 @@
                 // icon.style.transform = icon.style.transform === 'rotate(180deg)' ? '' : 'rotate(180deg)';
             }
         </script>
-         <script>
+        
+         <!-- <script>
             $(document).ready(function(){
                 $(".counter").counterUp({
                     delay: 10,
@@ -1266,12 +1249,34 @@
                     
                 });
             });
-         </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" ></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" ></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/counterup2/2.0.2/index.js" ></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" ></script>
+         </script> -->
+         <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+
+
+<script>
+    const counterUp = window.counterUp.default;
+
+const callback = entries => {
+    entries.forEach(entry => {
+        const el = entry.target;
+        if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+            counterUp(el, {
+                duration: 2000,
+                delay: 16,
+            });
+            el.classList.add('is-visible');
+        }
+    });
+};
+
+const counters = document.querySelectorAll('.counter');
+counters.forEach(counter => {
+    const IO = new IntersectionObserver(callback, { threshold: 1 });
+    IO.observe(counter);
+});
+</script>
+
+     
 </body>
 
 </html>
